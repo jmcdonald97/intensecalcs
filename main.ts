@@ -8,3 +8,6 @@ input.onButtonPressed(Button.A, function () {
     }
     basic.showNumber((input.runningTimeMicros() - StartTime) / 1000000)
 })
+input.onGesture(Gesture.Shake, function () {
+    basic.showIcon(IconNames.Tortoise)
+})
