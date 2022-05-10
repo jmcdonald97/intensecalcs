@@ -1,5 +1,8 @@
 let StartTime = 0
 let DivideAnswer = 0
+input.onPinPressed(TouchPin.P0, function () {
+    basic.clearScreen()
+})
 input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Heart)
     StartTime = input.runningTimeMicros()
